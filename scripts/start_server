@@ -1,5 +1,6 @@
 #!/bin/bash
 cd /home/ec2-user/app
-source environment/bin/activate
+python -m virtualenv envsp
+source env/bin/activate
 supervisord -c supervisord.conf
 
